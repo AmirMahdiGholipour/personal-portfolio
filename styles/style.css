@@ -89,8 +89,18 @@ main{
   min-height:360px;
   background: linear-gradient(180deg, rgba(210,193,182,0.06), transparent 30%);
 }
-.hero-left{flex:0 0 180px; display:flex; align-items:center; justify-content:center;}
-.hero-right{flex:1;}
+.hero-left{
+  flex:0 0 180px;
+  display:flex; 
+  align-items:center; 
+  justify-content:center;
+}
+.hero-right{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /* circular avatar */
 .avatar{
@@ -105,8 +115,17 @@ main{
 }
 
 /* typography */
-.hero h1{margin:0 0 10px 0; font-size:1.7rem; color:var(--primary);}
-.lead{margin:0 0 16px 0; color:#1f2937; line-height:1.6;}
+.hero h1{
+  margin:0 0 10px 0; 
+  font-size:1.7rem; 
+  color:var(--primary);
+}
+.lead{
+  margin:0 0 16px 0;
+  color:#1f2937; 
+  line-height:1.6;
+  direction: rtl;
+}
 
 /* CTA inside hero */
 .cta{
