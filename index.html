@@ -9,13 +9,13 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a class="logo" href="#home">Amir Mahdi Gholipour</a>
             <nav class="nav">
                 <a href="#skills">مهارت‌ها</a>
                 <a href="#about">درباره من</a>
-                <a href="#works">نمونه‌کارها</a>
+                <a href="#portfolio">نمونه‌کارها</a>
                 <a href="#contact" class="btn-contact">تماس با من</a>
             </nav>
+            <a class="logo" href="#home">Amir Mahdi Gholipour</a>
         </div>
     </header>
 
@@ -55,23 +55,84 @@
             <div class="skill-card">
                 <h3>JavaScript</h3>
                 <div class="skill-bar">
-                    <div class="skill-level" style="width: 30%"></div>
+                    <div class="skill-level" style="width: 20%"></div>
                 </div>
             </div>
 
             <div class="skill-card">
                 <h3>Python</h3>
                 <div class="skill-bar">
-                    <div class="skill-level" style="width: 60%"></div>
+                    <div class="skill-level" style="width: 70%"></div>
                 </div>
             </div>
 
             </div>
         </section>
 
-        <section id="about" class="spacer container">سکشن درباره من (مرحله بعدی)</section>
-        <section id="works" class="spacer container">سکشن نمونه‌کارها (مرحله بعدی)</section>
-        <section id="contact" class="spacer container">سکشن تماس (مرحله بعدی)</section>
+        <section id="about" class="about container">
+            <h2 class="section-title">درباره من</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        سلام! من امیرم، عاشق طراحی و کدنویسی وب. از وقتی وارد دنیای برنامه‌نویسی شدم، 
+                        همیشه سعی کردم پروژه‌هایی بسازم که هم خوشگل باشن، هم تمیز و کاربردی.  
+                        فعلاً تمرکزم روی HTML، CSS و پایتونه، ولی دارم جاوااسکریپت و فریم‌ورک‌هاش رو هم یاد می‌گیرم تا حرفه‌ای‌تر بشم.
+                    </p>
+                    <p>
+                        هدفم اینه که بتونم پروژه‌هایی بسازم که تجربه‌ی کاربری خوبی بدن و حس مدرن بودن رو منتقل کنن ✨  
+                        توی اوقات فراغتم فیلم می‌بینم، آهنگ می‌سازم و دنبال چیزای جدید یاد گرفتنم!
+                    </p>
+                </div>
+
+                <div class="about-pic">
+                    <!-- اگه خواستی یه عکس جدا بذار اینجا -->
+                <div class="pic" style="background-image: url(./styles/./photo_2025-07-11_22-33-42.jpg)"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>نمونه کارها</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="نمونه کار ۱">
+                    <h3>طراحی سایت شخصی</h3>
+                    <p>یک سایت شخصی ساده با HTML, CSS و JavaScript</p>
+                </div>
+                
+
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="نمونه کار ۲">
+                    <h3>پنل مدیریت</h3>
+                    <p>پنل ساده با قابلیت افزودن و حذف داده‌ها</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="نمونه کار ۳">
+                    <h3>طراحی لندینگ پیج</h3>
+                    <p>صفحه فرود واکنش‌گرا برای معرفی محصول</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>تماس با من</h2>
+            <p>برای همکاری، پروژه یا هر سوالی می‌تونی باهام در ارتباط باشی.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="نام شما" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="ایمیل شما" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="پیام شما..." required></textarea>
+                </div>
+                <button type="submit">ارسال پیام</button>
+            </form>
+        </section>
+
     </main>
 
     <script src="./scripts/script.js"></script>
